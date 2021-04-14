@@ -1,0 +1,591 @@
+*{padding: 0;margin: 0;box-sizing: border-box; z-index: 1; transition: all 1s ease-in-out;}
+/*Start Style for header*/
+body{
+    perspective: 400px;
+}
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+.content{
+    width: 100%;/*50*/
+    margin: 0;
+}
+.menu{
+    display: none;
+}
+
+header{
+    width: 100%;
+    background-image: linear-gradient(#e215e9, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+    height: 10vh;
+    color: #fff;
+    
+}
+header img{
+    display: none;
+}
+
+/*Style for left*/
+header .left{
+    float: left;
+    width: 40%;
+    margin-top: 10px;
+    display:flex;
+    justify-content: space-around;
+}
+
+header h1{
+   font-family: 'Courier New', Courier, monospace;  
+   font-size: 2rem;
+   width: fit-content;
+   cursor: pointer;
+   
+   
+}
+/*Style for right*/
+header .right{
+    float: right;
+    width: 50%;
+    margin-top: 10px;
+    
+    
+}
+/*Style for ul li navbar*/
+header ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+header ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color:White;
+    cursor: pointer;
+}
+
+header ul li{
+    list-style: none;
+    float: left;
+    width: 33%;
+}
+
+/*End Style for header*/
+/*Start Style for content */
+.container{
+    width: 1200px;
+    height: 800px;
+    z-index: 1;
+    margin: auto;
+    overflow: hidden;
+    
+    
+}
+/*style for about*/
+
+section .about {
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 2rem;
+    display: block;/*is trun*/
+    margin: 10px auto;
+    z-index: 2;
+    width: 90%;
+    height: 600px;
+    background-color: white;
+}
+section .about::before {
+  
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #993939;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#e215e9, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+    animation: rotate 4s linear infinite;
+}
+section .about::after {
+    
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: white;
+    border-radius: 5px;
+}
+
+/*Style for section .about .left*/
+
+section .about .left{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+section .about .left .left{
+    float: left;
+    width: 30%;
+    height: 100%;
+    display: block;
+    text-align:end;
+}
+section .about .left .left h1{
+    width: 100%;
+    height: 33%;
+    
+}
+section .about .left .right{
+    float: left;
+    width: 70%;
+    height: 100%;
+    
+}
+section .about .left .right h1{
+    width: 100%;
+    height: 33%;
+}
+/*Style for section .about .right*/
+section .about .right{
+    float: right;
+    width: 50%;
+}
+section .about .right img{
+   text-align: center;
+   width: 90%;
+   border-radius: 50%;
+   border:solid 2px black;
+}
+section .about .right h2{
+    text-align: center;
+}
+/*style for Skille*/
+
+section .skille {
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+	padding: 2rem;
+    margin: 10px auto;
+    border-radius: 10px;
+    width: 90%;
+    height: 600px;
+    background-color: #fff;
+    display: none;  /*is trun flex*/
+    justify-content: space-around;
+}
+section .skille::before {
+  
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #993939;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#e215e9, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+    animation: rotate 4s linear infinite;
+}
+section .skille::after {
+    
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: white;
+    border-radius: 5px;
+}
+
+/*anim for */
+
+
+section .skille >div {
+	position: relative;
+	z-index: 0;
+	width: 25% ;
+    height: 75%;
+	border-radius: 10px;
+	overflow: hidden;
+	
+}
+section .skille >div::before {
+  
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #993939;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#e215e9, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+    animation: rotate 4s linear infinite;
+}
+section .skille >div::after {
+    
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: white;
+    border-radius: 5px;
+}
+section .skille >div{
+  width: 25% ;
+  height: 75%;
+  margin-top: 2%;
+  animation: div 3s;
+  animation-iteration-count: infinite;
+}
+
+    
+
+section .skille :is(.html,.css,.js){
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+}
+section .skille :is(.html,.css,.js) h1{
+    height: 80%;
+    text-align: center;
+    font-size: 48px;
+    
+}
+section .skille :is(.html,.css,.js) .how{
+    
+    margin: auto;
+    width: 90%;
+    height: 40px;
+    border-radius: 20px;
+    background-color:#dbdbdb;
+}
+
+section .skille .how .much{
+    border-radius: 20px;
+    width: 0;
+    animation: html 10s;
+    animation-iteration-count: infinite;
+    background-color: red;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+section .skille .how .much p{
+    
+    font-size: 22px;
+}
+@keyframes html {
+    from{ width: 0%;}
+    to{  width: 90%;}
+}
+@keyframes css {
+    from{ width: 0%;}
+    to{  width: 80%;}
+}
+@keyframes js {
+    from{ width: 0%;}
+    to{  width: 80%;}
+}
+
+
+/*style for contact*/
+
+
+section .contact {
+	position: relative;
+	z-index: 0;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 2rem;
+    margin: 10px auto;
+    width: 90%;
+    height: 600px;
+    background-color: white;
+    display: none;/*flex*/
+    justify-content: space-around;
+
+}
+section .contact::before {
+  
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #993939;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#e215e9, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+    animation: rotate 4s linear infinite;
+}
+section .contact::after {
+    
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: white;
+    border-radius: 5px;
+}
+
+section .skille {
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 2rem;
+    margin: 10px auto;
+    width: 90%;
+    height: 600px;
+    background-color: #fff;
+    display: none;  /*is trun flex*/
+    justify-content: space-around;
+}
+section .skille::before {
+  
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #993939;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#e215e9, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+    animation: rotate 4s linear infinite;
+}
+section .skille::after {
+    
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: white;
+    border-radius: 5px;
+}
+
+/*anim for */
+
+
+section .contact >div {
+	position: relative;
+	z-index: 0;
+	width: 25% ;
+    height: 75%;
+	border-radius: 10px;
+	overflow: hidden;
+    margin-top: 2%;
+}
+section .contact>div::before {
+  
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #993939;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#e215e9, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+    animation: rotate 4s linear infinite;
+}
+section .contact >div::after {
+    
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: white;
+    border-radius: 5px;
+}
+/*Style for image div*/
+section .contact .image {
+	position: relative;
+	z-index: 0;
+	width: 400px;
+	height: 300px;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 2rem;
+	
+	
+	
+}
+section .contact .image::before {
+  
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #993939;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#e215e9, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+    animation: rotate 4s linear infinite;
+}
+section .contact .image::after {
+    
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: white;
+    border-radius: 5px;
+}
+section .contact .image{
+   
+    margin:10px auto;
+    width: 90%;
+    height: 60%;
+    border: black 1px solid;
+}
+section .contact .image img{
+    width: 90%;
+    text-align: center;
+}
+section .contact .image img:hover{
+   opacity: .5;
+}
+/*End Style for content*/
+/*For moblie ***************************************For moblie**************For moblie ***************************************For moblie******************************* ***********************************/
+
+@media screen and (max-width: 900px) {
+    /*menu Style */
+    
+   .content{
+       width: 100%;/*50*/
+      
+   }
+    .menu{
+        background-color: rgba(0, 0, 0, .2);
+        width: 50%;/*40*/
+        text-align: center;
+        height: 150vh;
+        position:absolute;
+        display: none;
+    }
+    .menu img{
+        position:absolute;
+    }
+    .menu ul{
+        margin-top: 25vh;
+        height: 75%;
+    }
+   .menu li{
+       list-style: none;
+       height: 30%;
+       font-size: 42px;
+   }
+    /*End */
+    /*header*/
+    header .left{
+        width: 100%;
+    }
+    /*Style for right*/
+    header .right{
+        display: none;
+    }
+/*Start Style for content */
+.container{
+    width: 100%;
+    height:fit-content;
+}
+/*style for about*/
+
+section .about {
+    width: 90%;
+    height: 1000px;
+    display: block;
+}
+section .about .left{
+    top:0;
+    width: 100%;
+    height: 40%;
+}
+
+/*Style for section .about .right*/
+section .about .right{
+    width: 100%;
+}
+/*Style for skille*/
+section .skille {
+    width: 90%;
+    height: fit-content;
+    display: none;  /*is trun black*/
+}
+/*anim for */
+section .skille >div {
+	 width: 100% ;
+     height: 60vh;
+}
+/*style for contact */
+section .contact {
+    width: 90%;
+    height: fit-content;
+    display: none;/*block*/
+}
+section .contact >div {
+	width: 90% ;
+    height: 100%;
+}
+                                 }
+
+/*End for moblie*/
