@@ -24,11 +24,13 @@ function go(){
     
    if(menu1.style.display==="block") {
     menu1.style.display="none";
-    content.style.marginLeft="0";
+    
+    content.style.display="block";
    }
    else{
     menu1.style.display="block";
-    content.style.marginLeft="50%";
+    
+    content.style.display="none";
    }
 }
 /**/ 
@@ -37,11 +39,11 @@ m=0;
 
 function menu(m){
     switch(m){
-        case 1:about.style.display="block";skille.style.display="none";contact.style.display="none" ;
+        case 1:about.style.display="block";skille.style.display="none";contact.style.display="none" ;menu1.style.display="none";content.style.display="block";
         break;
-       case 2:about.style.display="none";skille.style.display="block";contact.style.display="none"  ;
+       case 2:about.style.display="none";skille.style.display="block";contact.style.display="none"  ;menu1.style.display="none"; content.style.display="block";
        break;
-       case 3:about.style.display="none";skille.style.display="none";contact.style.display="block"  ;
+       case 3:about.style.display="none";skille.style.display="none";contact.style.display="block"  ;menu1.style.display="none";content.style.display="block";
        break;
 
     }
