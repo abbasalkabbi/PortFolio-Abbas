@@ -509,14 +509,16 @@ section .contact .image img:hover{
 
 @media screen and (max-width: 900px) {
     /*menu Style */
-    
+    header img{
+        display: block;
+    }
    .content{
        width: 100%;/*50*/
       
    }
     .menu{
         background-color: rgba(0, 0, 0, .2);
-        width: 50%;/*40*/
+        width: 100%;/*40*/
         text-align: center;
         height: 150vh;
         position:absolute;
